@@ -11,6 +11,9 @@ object SimpleParserSpec extends Specification {
 //    doBefore { println("before...") }
 //    doAfter { println("after...") }
 
+    // it's odd that, when debuging this code with IntelliJ, any breakpoint in the file
+    // will be executed once for each test case
+
     val parser = new SimpleParser()
 
     "do simple math first" in {
